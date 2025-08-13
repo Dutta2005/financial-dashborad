@@ -14,6 +14,7 @@ A comprehensive financial dashboard built with Next.js, featuring real-time fina
 - **Responsive Design**: Optimized for mobile, tablet, and desktop devices
 - **Loading States**: Skeleton loaders and smooth transitions
 - **Error Handling**: Comprehensive error boundaries and retry mechanisms
+- **PDF Export**: Generate PDF reports from dashboard data or screenshots
 
 ## Tech Stack
 
@@ -23,6 +24,7 @@ A comprehensive financial dashboard built with Next.js, featuring real-time fina
 - **Charts**: Recharts
 - **Icons**: Lucide React
 - **State Management**: React Hooks
+- **PDF Generation**: jsPDF and html2canvas
 
 ## Project Structure
 
@@ -46,9 +48,7 @@ src/
 
 ## Screenshots
 
-
 ![Dashboard](./public/image.png)
-
 
 ## Getting Started
 
@@ -83,6 +83,36 @@ yarn dev
 ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## PDF Export Features
+
+The dashboard includes two types of PDF export functionality:
+
+### 1. Data PDF Export
+
+- Generates a structured PDF report with all dashboard data
+- Includes formatted tables and metrics
+- Professional layout with headers and footers
+- File naming: `financial-dashboard-YYYY-MM-DD.pdf`
+
+### 2. Screenshot PDF Export
+
+- Captures the entire dashboard as a high-quality image
+- Converts the visual dashboard to PDF format
+- Preserves charts, colors, and layout
+- File naming: `financial-dashboard-screenshot-YYYY-MM-DD.pdf`
+
+### Usage
+
+- Click the "Data PDF" button to export structured data
+- Click the "Screenshot PDF" button to export visual dashboard
+- Both buttons are located in the top-right corner of the dashboard
+- PDFs are automatically downloaded to your default download folder
+
+### PDF Preview
+
+- Visit `/pdf-preview` to see a print-friendly version of the dashboard
+- Add `?timeRange=7d` parameter to specify time range for the preview
 
 ## API Endpoints
 

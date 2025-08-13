@@ -1,0 +1,100 @@
+/* PDF-safe color overrides to avoid oklch issues */
+.pdf-safe {
+  /* Override Tailwind colors with explicit hex values */
+}
+
+.pdf-safe .bg-red-600 {
+  background-color: #dc2626 !important;
+}
+
+.pdf-safe .bg-red-500 {
+  background-color: #ef4444 !important;
+}
+
+.pdf-safe .bg-red-50 {
+  background-color: #fef2f2 !important;
+}
+
+.pdf-safe .bg-blue-500 {
+  background-color: #3b82f6 !important;
+}
+
+.pdf-safe .bg-blue-50 {
+  background-color: #eff6ff !important;
+}
+
+.pdf-safe .bg-green-600 {
+  background-color: #16a34a !important;
+}
+
+.pdf-safe .bg-green-500 {
+  background-color: #22c55e !important;
+}
+
+.pdf-safe .bg-yellow-500 {
+  background-color: #eab308 !important;
+}
+
+.pdf-safe .bg-orange-500 {
+  background-color: #f97316 !important;
+}
+
+.pdf-safe .bg-gray-500 {
+  background-color: #6b7280 !important;
+}
+
+.pdf-safe .bg-gray-100 {
+  background-color: #f3f4f6 !important;
+}
+
+.pdf-safe .bg-gray-50 {
+  background-color: #f9fafb !important;
+}
+
+.pdf-safe .bg-white {
+  background-color: #ffffff !important;
+}
+
+.pdf-safe .text-red-600 {
+  color: #dc2626 !important;
+}
+
+.pdf-safe .text-green-600 {
+  color: #16a34a !important;
+}
+
+.pdf-safe .text-blue-600 {
+  color: #2563eb !important;
+}
+
+.pdf-safe .text-gray-900 {
+  color: #111827 !important;
+}
+
+.pdf-safe .text-gray-600 {
+  color: #4b5563 !important;
+}
+
+.pdf-safe .text-gray-500 {
+  color: #6b7280 !important;
+}
+
+.pdf-safe .text-white {
+  color: #ffffff !important;
+}
+
+.pdf-safe .border-red-600 {
+  border-color: #dc2626 !important;
+}
+
+.pdf-safe .border-blue-600 {
+  border-color: #2563eb !important;
+}
+
+.pdf-safe .border-gray-200 {
+  border-color: #e5e7eb !important;
+}
+
+.pdf-safe .border-gray-300 {
+  border-color: #d1d5db !important;
+}

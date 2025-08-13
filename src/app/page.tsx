@@ -13,6 +13,7 @@ import SipBusinessChart from '@/components/charts/SipBusinessChart';
 import MonthlyMisChart from '@/components/charts/MonthlyMisChart';
 import ErrorMessage from '@/components/ui/ErrorMessage';
 import { MetricCardSkeleton, StatCardSkeleton, ChartSkeleton } from '@/components/ui/SkeletonLoader';
+import PdfExportButton from '@/components/ui/PdfExportButton';
 
 // Hooks and utilities
 import { useDashboard } from '@/hooks/useDashboard';
@@ -46,14 +47,26 @@ export default function Dashboard() {
 
   return (
     <div className="container-responsive">
-      <DashboardGrid>
-        {/* Time Range Filter */}
-        <div className="flex justify-center mb-6">
+      <div id="dashboard-container" className="pdf-safe">
+        <DashboardGrid>
+        {/* PDF Export and Time Range Filter */}
+        <div className="flex flex-col sm:flex-row justify-between items-center mb-6 space-y-4 sm:space-y-0">
           <TimeRangeFilter
             selectedRange={timeRange}
             onRangeChange={setTimeRange}
             ranges={TIME_RANGES}
           />
+          
+          <div className="flex space-x-2">
+            <PdfExportButton
+              dashboardData={dashboardState.data}
+              variant="data"
+            />
+            <PdfExportButton
+              dashboardData={dashboardState.data}
+              variant="screenshot"
+            />
+          </div>
         </div>
 
         {/* Metric Cards Section */}
@@ -171,6 +184,7 @@ export default function Dashboard() {
           )}
         </ChartSection>
       </DashboardGrid>
+      </div>
     </div>
   );
 }

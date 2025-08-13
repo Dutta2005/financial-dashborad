@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './pdf-safe.css';
 import Header from '@/components/layout/Header';
 import Navigation from '@/components/dashboard/Navigation';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
