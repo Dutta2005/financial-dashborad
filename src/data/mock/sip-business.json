@@ -1,0 +1,6 @@
+[
+  { "month": "Mar", "barValue": 1.6, "lineValue": 110 },
+  { "month": "Apr", "barValue": 1.8, "lineValue": 105 },
+  { "month": "May", "barValue": 1.7, "lineValue": 115 },
+  { "month": "Jun", "barValue": 1.9, "lineValue": 120 }
+]

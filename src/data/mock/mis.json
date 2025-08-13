@@ -1,0 +1,8 @@
+[
+  { "date": "Jan", "series1": 0.60, "series2": 0.40, "series3": 0.20 },
+  { "date": "Feb", "series1": 0.55, "series2": 0.45, "series3": 0.25 },
+  { "date": "Mar", "series1": 0.50, "series2": 0.50, "series3": 0.30 },
+  { "date": "Apr", "series1": 0.45, "series2": 0.55, "series3": 0.35 },
+  { "date": "May", "series1": 0.40, "series2": 0.60, "series3": 0.40 },
+  { "date": "Jun", "series1": 0.35, "series2": 0.65, "series3": 0.45 }
+]

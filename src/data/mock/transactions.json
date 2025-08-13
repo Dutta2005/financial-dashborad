@@ -1,0 +1,7 @@
+{
+  "purchases": { "count": 0, "amount": 0 },
+  "redemptions": { "count": 0, "amount": 0 },
+  "rejectedTransactions": { "count": 0, "amount": 0 },
+  "sipRejections": { "count": 0, "amount": 0 },
+  "newSip": { "count": 0, "amount": 0 }
+}
